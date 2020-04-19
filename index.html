@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-banner">
+        <h1 class="site-logo">
+            <img src="images/bucket.jpeg" alt="Logo">
+            Einkäufe von Xenia und Sven
+        </h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item-content">
+            <div class="grid-item-insert">
+                <div class="grid-item-insert-field">
+                    <input type="date" id="paid_date" name="paid_date">
+                </div>
+                <div class="grid-item-insert-field">
+                    <select id="paid_by" name="paid_by">
+                        <option value="Xenia">Xenia</option>
+                        <option value="Sven">Sven</option>
+                    </select>
+                </div>
+                <div class="grid-item-insert-field">
+                    <input type="text" id="paid_money" name="paid_money" placeholder="0.00">
+                </div>
+                <div class="grid-item-insert-field">
+                    <select id="paid_where" name="paid_where">
+                        <option value="Supermarkt">Supermarkt</option>
+                        <option value="Tankstelle">Tankstelle</option>
+                        <option value="Baumarkt">Baumarkt</option>
+                    </select>
+                </div>
+                <div class="grid-item-insert-field">
+                    <button class="button" style="float:right" onclick="checked_add_row()">Hinzufügen</button>
+                </div>
+            </div>
+            <div class="grid-item-table">
+                <table id="groceryList">
+                    <tr>
+                        <th>Datum</th>
+                        <th>Bezahlt von</th>
+                        <th>Summe</th>
+                        <th>Einkaufsmarkt</th>
+                    </tr>
+                    <tr>
+                        <td>19.04.2020</td>
+                        <td>Xenia</td>
+                        <td>99.99</td>
+                        <td>Supermarkt</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid-item-stats">2</div>
+
+
+
+    </div>
+    <script src="scripts/table.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+
+</html>
